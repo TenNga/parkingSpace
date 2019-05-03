@@ -87,16 +87,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         getLocationPermission();
 
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
         mConditionRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String ll = dataSnapshot.child("latitude").getValue(String.class);
-                Toast.makeText(MapActivity.this, ll, Toast.LENGTH_SHORT).show();
+                for(DataSnapshot s: dataSnapshot.getChildren()){
+                    Log.d(TAG, "onDataChange: "+s.getValue());
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(s.child("latitude").getValue(Double.class),s.child("longitude").getValue(Double.class))));
+                }
             }
 
             @Override
@@ -104,6 +101,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
             }
         });
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
     }
 
 
@@ -139,10 +143,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         Log.d(TAG, "moveCamera: moving the camera");
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,zoom));
 
-        final MarkerOptions options = new MarkerOptions();
-        options.draggable(false); //will be true later
-
-        mMap.addMarker(options.position(latLng).title(options.getPosition().toString()));
+//        final MarkerOptions options = new MarkerOptions();
+//        options.draggable(false); //will be true later
+//
+//        mMap.addMarker(options.position(latLng).title(options.getPosition().toString()));
 
         if(mMap != null){
             mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter(){

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "355082043687-olicgd1rh78bki22ntbcppl961k7a9uk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kevinkarma.park",
+            "certificate_hash": "1e23a588466728ca931a72043831cfc60abb63b2"
+          }
+        },
+        {
           "client_id": "355082043687-em5g3ldfdbhiu9agijiq2hj57n6mg2r5.apps.googleusercontent.com",
           "client_type": 3
         }
