@@ -25,4 +25,4 @@ If you are one of people who spent hours to find parking space going round and r
 	- Photoshop: the logo design is made with the help of Adobe photoshop.
 
 ### Screenshot
-![Image of ScreenShot](https://github.com/TenNga/Video-Search-Engine-React/blob/master/parkScreenShot.jpg)
+![Image of ScreenShot](https://github.com/TenNga/parkingSpace/blob/master/parkScreenShot.jpg)
