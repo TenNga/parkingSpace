@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "355082043687",
+    "firebase_url": "https://fabled-access-239105.firebaseio.com",
+    "project_id": "fabled-access-239105",
+    "storage_bucket": "fabled-access-239105.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355082043687:android:9498c8a75f3c7286",
+        "android_client_info": {
+          "package_name": "com.kevinkarma.park"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355082043687-em5g3ldfdbhiu9agijiq2hj57n6mg2r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_lu5Fs5De9HscUQjLVjv3eb-xXzJUyN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355082043687-em5g3ldfdbhiu9agijiq2hj57n6mg2r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
